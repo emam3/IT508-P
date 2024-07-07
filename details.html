@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-------Stylesheet-------->
+    <link rel="stylesheet" href="./assets/css/details.css">
+    <!----------Icon----------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--------Swiper CSS-------->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <title>Details</title>
+</head>
+
+<body>
+    <!------------------------NavBar------------------------------>
+    <nav>
+        <div class="container">
+            <div class="border__div">
+                <div class="logo__icons">
+                    <h3>IT508</h3>
+                    <div class="icons">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #323334; font-size: 20px;"></i>
+                        <i class="fa-regular fa-user" style="color: #323334; font-size: 20px;"></i>
+                        <a href="./bag.html"><i class='bx bx-shopping-bag' style='color:#323334; font-size: 24px;'></i></a>
+                        <p id="bagCount">0</p>
+                        <a href="./wishlist.html"><i class="fa-regular fa-heart" style="color: #323334; font-size: 20px;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="sec__border__div">
+                <ul class="nav__links">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./store.html">STORE</a>
+                    </li>
+                    <li><a href="./about_us.html">ABOUT US</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="/contact_us.html">CONTACT US </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!------------------------Gallery---------------------------->
+    <section class="product__details">
+        <div class="container">
+            <div class="main__div">
+                <div class="left__side">
+                    <div class="two__images">
+                        <figure>
+                            <img src="./assets/images/details/Rectangle 83.png" alt="" id="first__img">
+                        </figure>
+                        <figure>
+                            <img src="./assets/images/details/Rectangle 82.png" alt="" id="sec__img">
+                        </figure>
+                    </div>
+                    <figure>
+                        <img src="./assets/images/details/Rectangle 97.png" alt="" id="third__img">
+                    </figure>
+                    <div class="product__desc">
+                        <div class="product__desc__text">
+                            <h3>Conscious</h3>
+                            <p>Twin duvet cover set in soft, woven fabric made from a Tencel™lyocell and cotton blend
+                                with a printed pattern. One pillowcase. Thread count 144.</p>
+                            <p>Composition — <span>Cotton 50%, Lyocell 50%</span></p>
+                            <p>Art. No. — <span>0643448004</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right__side">
+                    <h3 id="title">Checked Duvet Cover Set</h3>
+                    <h3 id="price">39.99$</h3>
+                    <p id="description">Light khaki green/white checks</p>
+                    <figure>
+                        <img src="./assets/images/details/Rectangle 83.png" alt="" id="fourth__img">
+                    </figure>
+                    <p><i class="fa-solid fa-location-dot"
+                            style="color: rgba(0, 0, 0, 0.5); font-size: 20px; margin-right: 5px;"></i> This Item available in store</p>
+                    <div class="select" onclick="openMenu()">
+                        <p id="setSizeValue">Select Size</p>
+                        <i class="fa-solid fa-chevron-down" style="color: #323334; cursor: pointer;"></i>
+                    </div>
+                    <div class="add__button">
+                        <button onclick="addBag()">Add to shopping bag</button>
+                    </div>
+                    <div class="size__list" id="size__list">
+                        <i class="fa-solid fa-xmark" style="color: #323334; font-size: 20px; cursor: pointer;" onclick="closeMenu()"></i>
+                        <ul>
+                            <li onclick="size('S')">S</li>
+                            <li onclick="size('M')">M</li>
+                            <li onclick="size('L')">L</li>
+                            <li onclick="size('XL')">XL</li>
+                        </ul>
+                        <div class="actions">
+                            <button onclick="clearSize()">CLEAR ALL</button>
+                            <button onclick="closeMenu()">DONE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!------------------------Similar Products-------------------->
+    <section class="similar__products">
+        <div class="container">
+            <h2>Also You May Like</h2>
+            <div class="slide-container swiper">
+                <div class="slide-content ">
+                    <div class="similar__main swiper-wrapper">
+
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!------------------------Footer---------------------------------->
+    <footer>
+        <div class="container">
+            <div class="main__footer__div">
+                <div class="right__div">
+                    <h3>IT508</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                    <p> adipiscing elit, sed do eiusmod tempor</p>
+                    <div class="address">
+                        <p>121 king street, Cairo</p>
+                        <p>+20 10 0000 0000</p>
+                        <p>contact@urbanoutfitters.com</p>
+                        <div class="social__icons">
+                            <i class="fa-brands fa-facebook-f" style="color: #ffffff; font-size: 28px;"></i>
+                            <i class="fa-brands fa-twitter" style="color: #ffffff; font-size: 28px;"></i>
+                            <i class="fa-brands fa-linkedin-in" style="color: #ffffff; font-size: 28px;"></i>
+                            <i class="fa-brands fa-github" style="color: #ffffff; font-size: 28px;"></i>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <h2>COMPANY</h2>
+                    <li>Company</li>
+                    <li>About</li>
+                    <li>Careers</li>
+                    <li>Blog</li>
+                    <li>Products</li>
+                </ul>
+                <ul>
+                    <h2>SUPPORT</h2>
+                    <li>Support</li>
+                    <li>Getting started</li>
+                    <li>Help center</li>
+                    <li>Report a bug</li>
+                    <li>Chat support</li>
+                </ul>
+                <div class="left__div">
+                    <h2>FROM THE BLOG</h2>
+                    <div class="blog__content">
+                        <h3>26 <span>May</span></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                        <p>adipiscing elit.</p>
+                        <p>3 Comments</p>
+                    </div>
+                    <div class="footer__bottom__border">
+                    </div>
+                    <div class="blog__content">
+                        <h3>26 <span>May</span></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                        <p>adipiscing elit.</p>
+                        <p>3 Comments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <p>Urban Outfitters © – All rights reserved </p>
+        </div>
+    </footer>
+</body>
+<!-- Swiper JS -->
+<script src="./assets/js/details/swiper-bundle.min.js"></script>
+
+<!--My JS File-->
+<script src="./assets/js/details/script.js"></script>
+
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-------Stylesheet-------->
+    <link rel="stylesheet" href="./assets/css/store.css">
+    <!----------Icon----------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Store</title>
+</head>
+
+<body>
+    <!------------------------NavBar------------------------------>
+    <nav>
+        <div class="container">
+            <div class="border__div">
+                <div class="logo__icons">
+                    <h3>CS510</h3>
+                    <div class="icons">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #323334; font-size: 20px;"></i>
+                        <i class="fa-regular fa-user" style="color: #323334; font-size: 20px;"></i>
+                        <a href="./bag.html"><i class='bx bx-shopping-bag' style='color:#323334; font-size: 24px;'></i></a>
+                        <p id="bagCount">0</p>
+                        <a href="./wishlist.html"><i class="fa-regular fa-heart" style="color: #323334; font-size: 20px;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="sec__border__div">
+                <ul class="nav__links">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./store.html">STORE</a>
+                    </li>
+                    <li><a href="./about_us.html">ABOUT US</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="/contact_us.html">CONTACT US </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!------------------------Banner------------------------------->
+    <section class="banner__section">
+        <div class="banner__content">
+            <h2>MEMBER EXCLUSIVE</h2>
+            <h3>15% OFF EVERYTHING + EXTRA $10 OFF FOR PLUS STATUS</h3>
+            <p>Not a member? <a href="#">Join Now To Shop</a></p>
+        </div>
+    </section>
+    <!------------------------Products----------------------------->
+    <section class="products__section">
+        <div class="container">
+            <div class="main__div">
+                <div class="left__side">
+                    <div class="filteration">
+                        <h3>New Arrivals</h3>
+                        <p>New Arrivals</p>
+                    </div>
+                    <div class="filteration">
+                        <h3>Shop By Room</h3>
+                        <p>Bedroom</p>
+                        <p>Living Room</p>
+                        <p>Child Room</p>
+                        <p>Bathroom</p>
+                        <p>Outdoor</p>
+                    </div>
+                    <div class="filteration">
+                        <h3>Shop By Concept</h3>
+                        <p>Conscious</p>
+                        <p>Premium Quality</p>
+                        <p>Classic Collection</p>
+                    </div>
+                    <div class="filteration">
+                        <h3>Gender</h3>
+                        <div class="price__input">
+                            <input type="checkbox" name="women" id="women" value="women">
+                            <label for="">Women</label>
+                        </div>
+                        <div class="price__input">
+                            <input type="checkbox" name="man" id="man" value="man">
+                            <label for="">Man</label>
+                        </div>
+                    </div>
+                    <div class="filteration">
+                        <h3>Color</h3>
+                        <div class="colors">
+                            <p class="color-option" style="background-color: white; border: 1px solid #AAAAAC;" onclick="filterByColor('white')"></p>
+                            <p class="color-option" style="background-color: #323334;" onclick="filterByColor('#323334')"></p>
+                            <p class="color-option" style="background-color: #C4C4C4;" onclick="filterByColor('#C4C4C4')"></p>
+                            <p class="color-option" style="background-color: #F2C94C;" onclick="filterByColor('#F2C94C')"></p>
+                            <p class="color-option" style="background-color: #F2994A;" onclick="filterByColor('#F2994A')"></p>
+                            <p class="color-option" style="background-color: #DDC1B2;" onclick="filterByColor('#DDC1B2')"></p>
+                        </div>
+                        <div class="colors">
+                            <p class="color-option" style="background-color: #BB6BD9;" onclick="filterByColor('#BB6BD9')"></p>
+                            <p class="color-option" style="background-color: #56CCF2;" onclick="filterByColor('#56CCF2')"></p>
+                            <p class="color-option" style="background-color: #6FCF97;" onclick="filterByColor('#6FCF97')"></p>
+                            <p class="color-option" style="background-color: #219653;" onclick="filterByColor('#219653')"></p>
+                            <p class="color-option" style="background-color: #2F80ED;" onclick="filterByColor('#2F80ED')"></p>
+                            <p class="color-option" style="background-color: #EB5757;" onclick="filterByColor('#EB5757')"></p>
+                        </div>
+                        <div class="colors">
+                            <p class="color-option" style="background-color: #770505;" onclick="filterByColor('#770505')"></p>
+                            <p class="color-option" style="background-color: #0A5D8B;" onclick="filterByColor('#0A5D8B')"></p>
+                            <p class="color-option" style="background-color: #AD5B12;" onclick="filterByColor('#AD5B12')"></p>
+                            <p class="color-option" style="background-color: #4F0E8B;" onclick="filterByColor('#4F0E8B')"></p>
+                            <p class="color-option" style="background-color: #156008;" onclick="filterByColor('#156008')"></p>
+                            <p class="color-option" style="background-color: #DF1313;" onclick="filterByColor('#DF1313')"></p>
+                        </div>
+                    </div>
+                    <div class="filteration">
+                        <h3>Price</h3>
+                        <div class="price__input">
+                            <input type="checkbox" name="price" id="price0-40" value="0-40" onclick="filterByPrice('0-40')">
+                            <label for="">0$-40&</label>
+                        </div>
+                        <div class="price__input">
+                            <input type="checkbox" name="price" id="price41-100" value="41-100" onclick="filterByPrice('41-100')">
+                            <label for="">41$-100&</label>
+                        </div>
+                        <div class="price__input">
+                            <input type="checkbox" name="price" id="price101-150" value="101-150" onclick="filterByPrice('101-150')">
+                            <label for="">101$-150&</label>
+                        </div>
+                        <div class="price__input">
+                            <input type="checkbox" name="price" id="price151-175" value="151-175" onclick="filterByPrice('151-175')">
+                            <label for="">151$-175&</label>
+                        </div>
+                        <div class="price__input">
+                            <input type="checkbox" name="price" id="price176-250" value="176-250" onclick="filterByPrice('176-250')">
+                            <label for="">176$-250&</label>
+                        </div>
+                        <div class="price__input">
+                            <input type="checkbox" name="price" id="price251-350" value="251-350" onclick="filterByPrice('251-350')">
+                            <label for="">251$-350&</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="right__side">
+                    <h1>BEDROOM</h1>
+                    <P>Its easy to transform your bedroom interior with our great selection of accessories.</P>
+                    <div class="filter__div">
+                        <p><i class='bx bx-filter-alt' style='color:#323334'  ></i> FILTER & SORT</p>
+                        <div class="filter__text">
+                            <p>Models</p>
+                            <p>Products</p>
+                        </div>
+                    </div>
+                    <div class="filtered__products">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!------------------------Footer---------------------------------->
+    <footer>
+        <div class="container">
+            <div class="main__footer__div">
+                <div class="right__div">
+                    <h3>CS510</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                    <p> adipiscing elit, sed do eiusmod tempor</p>
+                    <div class="address">
+                        <p>121 king street, Cairo</p>
+                        <p>+20 10 0000 0000</p>
+                        <p>contact@urbanoutfitters.com</p>
+                        <div class="social__icons">
+                            <i class="fa-brands fa-facebook-f" style="color: #ffffff; font-size: 28px;"></i>
+                            <i class="fa-brands fa-twitter" style="color: #ffffff; font-size: 28px;"></i>
+                            <i class="fa-brands fa-linkedin-in" style="color: #ffffff; font-size: 28px;"></i>
+                            <i class="fa-brands fa-github" style="color: #ffffff; font-size: 28px;"></i>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <h2>COMPANY</h2>
+                    <li>Company</li>
+                    <li>About</li>
+                    <li>Careers</li>
+                    <li>Blog</li>
+                    <li>Products</li>
+                </ul>
+                <ul>
+                    <h2>SUPPORT</h2>
+                    <li>Support</li>
+                    <li>Getting started</li>
+                    <li>Help center</li>
+                    <li>Report a bug</li>
+                    <li>Chat support</li>
+                </ul>
+                <div class="left__side">
+                    <h2>FROM THE BLOG</h2>
+                    <div class="blog__content">
+                        <h3>26 <span>May</span></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                        <p>adipiscing elit.</p>
+                        <p>3 Comments</p>
+                    </div>
+                    <div class="footer__bottom__border">
+                    </div>
+                    <div class="blog__content">
+                        <h3>26 <span>May</span></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                        <p>adipiscing elit.</p>
+                        <p>3 Comments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <p>Urban Outfitters © – All rights reserved </p>
+        </div>
+    </footer>
+</body>
+<script src="./assets/js/store/script.js"></script>
+</html>
